@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.serviceconsumption.mapper.BumenMapper">
+
+	<select id="getlistAll" resultType="com.example.serviceconsumption.entity.BumenDto">
+       SELECT * from bumen;
+
+	</select>
+
+	<select id="updateMoney" >
+
+		 update account set  money='500' where accountnum='60001'
+
+	</select>
+
+</mapper>
